@@ -1,0 +1,61 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title', 'Quản trị viên - Công nghệ và Lập trình'); ?>
+
+<?php $this->startSection('content'); ?>
+ <div class="content-section" style="padding: 50px 0;">
+ <div class="container">
+ <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px;">Quản trị viên</h1>
+ <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 30px; text-align: justify;">
+ Chào mừng bạn đến với bảng điều khiển dành cho quản trị viên. Tại đây, bạn có thể quản lý nội dung bài viết, người dùng, và các thiết lập khác của hệ thống.
+ </p>
+ 
+ <div class="admin-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+ <!-- Quản lý bài viết -->
+ <div style="background-color: #f4f4f4; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+ <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Quản lý bài viết</h3>
+ <p style="font-size: 1.1rem; margin-bottom: 15px;">Xem, chỉnh sửa hoặc xóa bài viết từ danh sách.</p>
+ <a href="/php2/bai3/writing" style="background-color: #0056b3; color: white; font-size: 1rem; 
+ padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; transition: background-color 0.3s;">
+ Quản lý bài viết
+ </a>
+ </div>
+
+ <!-- Quản lý người dùng -->
+ <div style="background-color: #f4f4f4; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+ <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Quản lý người dùng</h3>
+ <p style="font-size: 1.1rem; margin-bottom: 15px;">Quản lý danh sách người dùng và phân quyền truy cập.</p>
+ <a href="/php2/bai3/introduce" style="background-color: #0056b3; color: white; font-size: 1rem; 
+ padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; transition: background-color 0.3s;">
+ Quản lý người dùng
+ </a>
+ </div>
+
+ <!-- Cài đặt hệ thống -->
+ <div style="background-color: #f4f4f4; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+ <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Cài đặt hệ thống</h3>
+ <p style="font-size: 1.1rem; margin-bottom: 15px;">Tùy chỉnh các cài đặt chung cho website.</p>
+ <a href="/php2/bai3/contact" style="background-color: #0056b3; color: white; font-size: 1rem; 
+ padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; transition: background-color 0.3s;">
+ Cài đặt hệ thống
+ </a>
+ </div>
+ 
+ <!-- Cài đặt  -->
+ <div style="background-color: #f4f4f4; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+ <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Bài viết </h3>
+ <p style="font-size: 1.1rem; margin-bottom: 15px;">Tùy chỉnh các bài viết.</p>
+ <a href="/php2/bai3/home" style="background-color: #0056b3; color: white; font-size: 1rem; 
+ padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; transition: background-color 0.3s;">
+ Cài đặt bài viết
+ </a>
+ </div>
+
+ </div>
+ 
+ <img src="https://picsum.photos/800/400?random=6" alt="Quản trị viên" style="width: 100%; margin-top: 30px; border-radius: 8px;">
+ </div>
+ </div>
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

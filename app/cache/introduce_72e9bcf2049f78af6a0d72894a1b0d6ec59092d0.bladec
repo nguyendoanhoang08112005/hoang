@@ -1,0 +1,32 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title', 'Giới thiệu - Công nghệ và Lập trình'); ?>
+
+<?php $this->startSection('content'); ?>
+ <div class="content-section" style="padding: 50px 0;">
+ <div class="container">
+ <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px;">Về Chúng Tôi</h1>
+ <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+ Chào mừng bạn đến với trang web của chúng tôi, nơi chia sẻ những kiến thức và xu hướng mới nhất 
+ trong lĩnh vực công nghệ và lập trình. Được thành lập với mục tiêu kết nối những người đam mê công nghệ, 
+ chúng tôi cung cấp các bài viết, tài liệu học tập, và mẹo hữu ích để hỗ trợ cộng đồng lập trình viên và 
+ những ai quan tâm đến thế giới công nghệ.
+ </p>
+ <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+ Với đội ngũ giàu kinh nghiệm và đam mê, chúng tôi cam kết mang đến cho bạn:
+ </p>
+ <ul style="font-size: 1.2rem; line-height: 1.8; margin-left: 20px; margin-bottom: 20px;">
+ <li>🔹 Các bài viết chất lượng cao về lập trình và công nghệ.</li>
+ <li>🔹 Những hướng dẫn từ cơ bản đến nâng cao để giúp bạn học tập hiệu quả.</li>
+ <li>🔹 Thông tin về các xu hướng và công nghệ mới nhất trong ngành.</li>
+ </ul>
+ <p style="font-size: 1.2rem; line-height: 1.8; text-align: justify;">
+ Chúng tôi tin rằng công nghệ là chìa khóa để mở ra tương lai, và việc học tập, chia sẻ kiến thức 
+ sẽ giúp mỗi người phát triển toàn diện. Hãy cùng chúng tôi khám phá thế giới công nghệ!
+ </p>
+ <img src="https://picsum.photos/800/400?random=2" alt="Giới thiệu" style="width: 100%; margin-top: 20px; border-radius: 8px;">
+ </div>
+ </div>
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

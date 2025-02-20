@@ -1,0 +1,38 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title', 'Đăng nhập - Công nghệ và Lập trình'); ?>
+
+<?php $this->startSection('content'); ?>
+ <div class="content-section" style="padding: 50px 0;">
+ <div class="container">
+ <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px;">Đăng nhập</h1>
+ <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+ Chào mừng bạn quay trở lại! Hãy đăng nhập để truy cập vào các bài viết, tài nguyên và các công cụ hữu ích về công nghệ và lập trình.
+ </p>
+ <form action="/php2/bai3/login/submit" method="post" style="max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+ <div style="margin-bottom: 15px;">
+ <label for="email" style="font-size: 1.2rem; display: block; margin-bottom: 5px;">Email:</label>
+ <input type="email" id="email" name="email" required 
+ style="width: 100%; padding: 10px; font-size: 1.2rem; border: 1px solid #ccc; border-radius: 5px;">
+ </div>
+ <div style="margin-bottom: 15px;">
+ <label for="password" style="font-size: 1.2rem; display: block; margin-bottom: 5px;">Mật khẩu:</label>
+ <input type="password" id="password" name="password" required 
+ style="width: 100%; padding: 10px; font-size: 1.2rem; border: 1px solid #ccc; border-radius: 5px;">
+ </div>
+ <div style="margin-bottom: 15px; text-align: center;">
+ <button type="submit" style="background-color: #0056b3; color: white; font-size: 1.2rem; 
+ padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+ Đăng nhập
+ </button>
+ </div>
+ <div style="text-align: center;">
+ <p style="font-size: 1rem;">Bạn chưa có tài khoản? <a href="/php2/bai3/logout" style="color: #0056b3;">Đăng ký</a></p>
+ </div>
+ </form>
+ <img src="https://picsum.photos/800/400?random=4" alt="Đăng nhập" style="width: 100%; margin-top: 20px; border-radius: 8px;">
+ </div>
+ </div>
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

@@ -1,0 +1,128 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title', 'Bài viết - Công nghệ và Lập trình'); ?>
+
+<?php $this->startSection('content'); ?>
+ <div class="content-section" style="padding: 50px 0;">
+ <div class="container">
+ <h1 class="text-center mb-4" style="font-size: 2.5rem; font-weight: bold; color: #333;">Bài viết về Công nghệ và Lập trình</h1>
+ <p class="text-center mb-5" style="font-size: 1.2rem; color: #777;">Khám phá những kiến thức, mẹo vặt và xu hướng mới nhất trong lĩnh vực công nghệ và lập trình.</p>
+ <br>
+ <!-- Danh sách bài viết -->
+ <div class="row g-4">
+ <!-- Bài viết 1 -->
+ <div class="col-md-4">
+ <div class="card shadow-lg border-0 rounded-4 overflow-hidden h-100">
+ <img src="https://picsum.photos/500/300?random=10" class="card-img-top" alt="Lập trình PHP cơ bản">
+ <div class="card-body">
+ <h5 class="card-title">Lập trình PHP cơ bản cho người mới bắt đầu</h5>
+ <p class="card-text">Tìm hiểu cách viết code PHP đầu tiên của bạn với những ví dụ minh họa chi tiết.</p>
+ <a href="#" class="btn btn-primary btn-lg w-100">Đọc thêm</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- Bài viết 2 -->
+ <div class="col-md-4">
+ <div class="card shadow-lg border-0 rounded-4 overflow-hidden h-100">
+ <img src="https://picsum.photos/500/300?random=11" class="card-img-top" alt="Ứng dụng AI trong đời sống">
+ <div class="card-body">
+ <h5 class="card-title">Ứng dụng của Trí tuệ nhân tạo (AI) trong đời sống</h5>
+ <p class="card-text">Khám phá cách AI đang thay đổi cách chúng ta sống và làm việc hàng ngày.</p>
+ <a href="#" class="btn btn-primary btn-lg w-100">Đọc thêm</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- Bài viết 3 -->
+ <div class="col-md-4">
+ <div class="card shadow-lg border-0 rounded-4 overflow-hidden h-100">
+ <img src="https://picsum.photos/500/300?random=12" class="card-img-top" alt="Làm chủ Git và GitHub">
+ <div class="card-body">
+ <h5 class="card-title">Hướng dẫn làm chủ Git và GitHub</h5>
+ <p class="card-text">Cách sử dụng Git và GitHub để quản lý mã nguồn hiệu quả trong các dự án.</p>
+ <a href="#" class="btn btn-primary btn-lg w-100">Đọc thêm</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- Bài viết 4 -->
+ <div class="col-md-4">
+ <div class="card shadow-lg border-0 rounded-4 overflow-hidden h-100">
+ <img src="https://picsum.photos/500/300?random=13" class="card-img-top" alt="Phát triển web với Laravel">
+ <div class="card-body">
+ <h5 class="card-title">Phát triển Web hiện đại với Laravel</h5>
+ <p class="card-text">Học cách xây dựng ứng dụng web mạnh mẽ và bảo mật với Laravel Framework.</p>
+ <a href="#" class="btn btn-primary btn-lg w-100">Đọc thêm</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- Bài viết 5 -->
+ <div class="col-md-4">
+ <div class="card shadow-lg border-0 rounded-4 overflow-hidden h-100">
+ <img src="https://picsum.photos/500/300?random=14" class="card-img-top" alt="Các công cụ DevOps phổ biến">
+ <div class="card-body">
+ <h5 class="card-title">Các công cụ DevOps phổ biến trong năm 2025</h5>
+ <p class="card-text">Danh sách các công cụ DevOps mà mọi kỹ sư phần mềm nên biết.</p>
+ <a href="#" class="btn btn-primary btn-lg w-100">Đọc thêm</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- Bài viết 6 -->
+ <div class="col-md-4">
+ <div class="card shadow-lg border-0 rounded-4 overflow-hidden h-100">
+ <img src="https://picsum.photos/500/300?random=15" class="card-img-top" alt="Cách học lập trình hiệu quả">
+ <div class="card-body">
+ <h5 class="card-title">10 mẹo để học lập trình hiệu quả</h5>
+ <p class="card-text">Bí quyết để trở thành lập trình viên chuyên nghiệp trong thời gian ngắn nhất.</p>
+ <a href="#" class="btn btn-primary btn-lg w-100">Đọc thêm</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<?php $this->stopSection(); ?>
+<style>
+ .card {
+ transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, border 0.3s ease;
+ border: 2px solid transparent; /* Đảm bảo rằng viền ban đầu không hiển thị */
+}
+
+.card:hover {
+ transform: translateY(-10px);
+ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+ border: 2px solid black; /* Viền đậm và màu xanh khi hover */
+}
+
+.card img {
+ object-fit: cover;
+ height: 200px;
+}
+
+.card-body {
+ padding: 20px;
+ background-color: #f9f9f9;
+}
+
+.card-title {
+ font-size: 1.25rem;
+ color: #333;
+ font-weight: bold;
+}
+
+.card-text {
+ font-size: 1rem;
+ color: #666;
+}
+
+.btn {
+ font-size: 1rem;
+ padding: 10px 15px;
+ border-radius: 30px;
+}
+
+</style>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

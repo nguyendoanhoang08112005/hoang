@@ -1,0 +1,13 @@
+{
+    "name": "dangm/bai3",
+    "type": "mvc",
+    "require": {
+        "phroute/phroute": "^2.2",
+        "eftec/bladeone": "^4.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/"
+        }
+    }
+}
